@@ -177,6 +177,13 @@ section {
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
+.header.header-scrolled .navbar a {
+  color: #003289;
+}
+
+
+
+
 .header .logo {
   line-height: 0;
 }
@@ -190,9 +197,12 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #012970;
+  color: #fff;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
+}
+.header.header-scrolled .logo span {
+  color: #01296F;
 }
 
 /*--------------------------------------------------------------
@@ -214,18 +224,19 @@ section {
 }
 
 .navbar li {
+  margin: 10px 10px 0px 0px;
   position: relative;
 }
 
 .navbar a {
+  border-bottom: 1px solid transparent;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #013289;
+  color: #eee;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -237,7 +248,11 @@ section {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #4154f1;
+  border-bottom: 1px solid #eee;
+}
+
+.header.header-scrolled .navbar a:hover, .header.header-scrolled .navbar .active, .header.header-scrolled .navbar li:hover > a {
+  border-bottom: 1px solid #003289;
 }
 
 .navbar .getstarted {
@@ -424,7 +439,11 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: linear-gradient(
+    #41414166, 
+   #414141aa
+  ),
+  url(../img/kevin-brunet-4-3cfgN9GV8-unsplash.jpg) top center no-repeat;
   background-size: cover;
 }
 
@@ -432,7 +451,7 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #012970;
+  color: #fff;
 }
 
 .hero h2 {
@@ -450,6 +469,7 @@ section {
   color: #fff;
   background: #4154f1;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  border: 1px solid #eee;
 }
 
 .hero .btn-get-started span {
@@ -466,7 +486,7 @@ section {
 }
 
 .hero .btn-get-started:hover i {
-  transform: translateX(5px);
+  transform: translateY(5px);
 }
 
 .hero .hero-img {
@@ -511,6 +531,21 @@ section {
 /*--------------------------------------------------------------
 # Index Page
 --------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Description
+--------------------------------------------------------------*/
+
+.description {
+  padding: 100px;
+}
+
+.description .content {
+  background-color: #f6f9ff;
+  padding: 40px;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
