@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -53,8 +53,10 @@
         <ul>
           <li><a class="nav-link active" href="#">Home</a></li>
           <li><a class="nav-link scrollto" href="#description">About</a></li>
-          <li><a class="nav-link scrollto" href="#references">Resources</a></li>
+          <li><a class="nav-link scrollto" href="#progress-section">Progress</a></li>
           <li><a class="nav-link scrollto" href="#people">People</a></li>
+          <li><a class="nav-link scrollto" href="#references">Resources</a></li>
+          <li><a class="nav-link scrollto" href="#documentation">Documentation</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -96,22 +98,35 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center">
             <div class="content rounded-3">
               <h2 class="fw-bold text-uppercase fs-5" style="color: #4154f1;">Project Description</h2>
-              <p>We are currently developing a full stack web application that students can interact with to learn about
-                robotics principles. Our goal is to bring more attention and opportunity for students to learn about the
-                importance of robotics as there is a lack of interest and availability in terms of education and
-                resources to learn about the field of robotics. WARE will serve as a central hub consisting of multiple
-                learning exercises where users can immerse themselves with robotics principles and concepts and hone
-                their knowledge of robotics while completing the various goals and exercises in each environment. In
-                each environment, users can write or upload their own Python code and instantly see the visual output on
-                the website with the use of an open source library from OpenAI called Gym.</p>
-              <p>Users and Instructors will be able to create their own personal accounts. Students will be able to use
-                a ‘Class ID’ code when creating their accounts to be grouped with their instructor. This then enables an
-                instructor to choose which environments the students will be able to have access to, as well as being
-                able to observe, monitor, and evaluate their students’ progress in the various environments. The
-                application is written with performance and simplicity in mind, as all processing of the user’s code is
-                done on the backend server. Consequently, users using low power devices such as smartphones and tablets
-                can take advantage of this learning platform without sacrificing performance. This application is being
-                designed to be available on all devices.</p>
+              <p>Our team is currently developing a full stack web application specifically designed for students taking
+                higher education
+                robotics classes. The main goal of this project is to give students convenient access to the open-source
+                OpenAI Gym
+                robotics environments, which are exercises that allow students to develop and test reinforcement
+                learning algorithms.
+                WARE incorporates these robotics environments in a user friendly website, and adds valuable features
+                such as a code
+                editor with syntax highlighting and support for uploading an existing code file. Users are able to view
+                the output of
+                their code with a generated video and shell output after the back-end server compiles the user's code.
+              </p>
+              <p>In addition, WARE provides a user account management system to manage access to WARE. To use WARE in an
+                educational
+                class, instructors will create their own accounts. Afterwards, instructors can create a class within
+                WARE, which
+                generates a Class ID that can be distributed to students. Students create their own accounts using the
+                Class ID given to
+                them. Instructors can observe and evaluate the progress made by each student in the environments
+                assigned.</p>
+              <p>WARE is developed with performance and simplicity by utilizing the lightweight Flask server framework
+                and Bootstrap web
+                development libraries. All code compilation is conducted on the back-end server, giving users the
+                capability of using
+                the OpenAI Gym framework without installing it on their own machines. This, combined with the goal of
+                making the
+                website's design fully responsive, allows users to take advantage of WARE using low-power devices such
+                as smartphones
+                and tablets.</p>
             </div>
           </div>
 
@@ -123,90 +138,34 @@
         </div><!-- End Description -->
       </div>
     </section>
-
-    <!-- ======= References Section ======= -->
-    <section id="references" class="services">
-
-      <div class="container" data-aos="fade-up">
-
-        <header class="section-header">
-          <h2>Project Resources</h2>
-          <p>Technologies, research, and documentation</p>
-        </header>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-box blue">
-              <i class="bi-file-earmark-text icon" style="padding: 25px;"></i>
-              <h3>OpenAI Gym</h3>
-              <p>Open-source API written in Python for solving reinforcement learning algorithms</p>
-              <a href="https://openai.com/blog/ingredients-for-robotics-research/" class="read-more"><span>Blog post:
-                  Ingredients for Robotics Research</span> <i class="bi bi-arrow-up-right"></i></a>
-              <a href="https://gym.openai.com/docs/" class="read-more"><span>OpenAI Gym Docs</span> <i
-                  class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-box orange">
-              <i class="bi-server icon" style="padding: 25px;"></i>
-              <h3>MySQL Documentation</h3>
-              <p>Database system utilized to store robotics environments and users</p>
-              <a href="https://dev.mysql.com/doc/" class="read-more"><span>Read More</span> <i
-                  class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-box green">
-              <i class="bi-hdd icon" style="padding: 25px;"></i>
-              <h3>Flask Server Documentation</h3>
-              <p>Back end software that receives and distributes content</p>
-              <a href="https://flask.palletsprojects.com/en/1.1.x/" class="read-more"><span>Read More</span> <i
-                  class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-box red">
-              <i class="bi-palette2 icon" style="padding: 25px;"></i>
-              <h3>Bootstrap Framework Documentation</h3>
-              <p>Front end framework providing the design of the user interface</p>
-              <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="read-more"><span>Read
-                  More</span> <i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-box purple">
-              <i class="bi-journal icon" style="padding: 25px;"></i>
-              <h3>Journal Article
-              </h3>
-              <p> Educational programming systems for learning at scale<br>Qianxiang Wang,
-                Wenxin Li,
-                Tao Xie
+    <section id="progress-section" class="description">
+      <div class=" container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+            <div class="content rounded-3">
+              <h2 class="fw-bold text-uppercase fs-5" style="color: #4154f1;">Progress</h2>
+              <p>As the semester ends, more features have been added to WARE to make it a full-fledged learning
+                platform. The user
+                account management system has been fully implemented. Two types of accounts are possible: instructors
+                and students.
+                After instructors create an account, they distribute the class ID obtained after creating a class to
+                their students.
+                Students sign up for an account with this class ID. Additionally, a password reset mechanism has been
+                created to assist
+                users in resetting their password if forgotten.
               </p>
-              <a href="https://dl.acm.org/doi/10.1145/2556325.2567868" class="read-more"><span>Read More</span> <i class="bi bi-arrow-up-right"></i></a>
+              <p>Another major accomplishment for the project team is the creation of the class management system.
+                Instructors can create
+                new classes using the Instructor Portal page, choose which environments they would like to enable, and
+                select due dates
+                for those environments. In addition, instructors can view the code submissions of every student in the
+                class.</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-            <div class="service-box pink">
-              <i class="bi-book icon" style="padding: 25px;"></i>
-              <h3>Problem Domain Book
-              </h3>
-              <p> Robotics in STEM Education<br>Khine, Myint Swe
-              </p>
-              <a href="https://www.amazon.com/dp/3319577859" class="read-more"><span>Read More</span> <i class="bi bi-arrow-up-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-
+        </div><!-- End Description -->
       </div>
-
-    </section><!-- End Services Section -->
+    </section>
     <!-- ======= People Section ======= -->
     <section id="people" class="features">
 
@@ -301,20 +260,134 @@
       </div>
 
     </section><!-- End Features Section -->
+    <!-- ======= References Section ======= -->
+    <section id="references" class="services">
 
-    
+      <div class="container" data-aos="fade-up">
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
-  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <header class="section-header">
+          <h2>Project Resources</h2>
+          <p>Technologies, research, and documentation</p>
+        </header>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="bi-file-earmark-text icon" style="padding: 25px;"></i>
+              <h3>OpenAI Gym</h3>
+              <p>Open-source API written in Python for solving reinforcement learning algorithms</p>
+              <a href="https://openai.com/blog/ingredients-for-robotics-research/" class="read-more"><span>Blog post:
+                  Ingredients for Robotics Research</span> <i class="bi bi-arrow-up-right"></i></a>
+              <a href="https://gym.openai.com/docs/" class="read-more"><span>OpenAI Gym Docs</span> <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="bi-server icon" style="padding: 25px;"></i>
+              <h3>MySQL Documentation</h3>
+              <p>Database system utilized to store robotics environments and users</p>
+              <a href="https://dev.mysql.com/doc/" class="read-more"><span>Read More</span> <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="bi-hdd icon" style="padding: 25px;"></i>
+              <h3>Flask Server Documentation</h3>
+              <p>Back end software that receives and distributes content</p>
+              <a href="https://flask.palletsprojects.com/en/1.1.x/" class="read-more"><span>Read More</span> <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="bi-palette2 icon" style="padding: 25px;"></i>
+              <h3>Bootstrap Framework Documentation</h3>
+              <p>Front end framework providing the design of the user interface</p>
+              <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="read-more"><span>Read
+                  More</span> <i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="bi-journal icon" style="padding: 25px;"></i>
+              <h3>Journal Article
+              </h3>
+              <p> Educational programming systems for learning at scale<br>Qianxiang Wang,
+                Wenxin Li,
+                Tao Xie
+              </p>
+              <a href="https://dl.acm.org/doi/10.1145/2556325.2567868" class="read-more"><span>Read More</span> <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="bi-book icon" style="padding: 25px;"></i>
+              <h3>Problem Domain Book
+              </h3>
+              <p> Robotics in STEM Education<br>Khine, Myint Swe
+              </p>
+              <a href="https://www.amazon.com/dp/3319577859" class="read-more"><span>Read More</span> <i
+                  class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+    <section id="documentation">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <header class="section-header">
+              <h2>Documentation</h2>
+              <p>Reports and media</p>
+            </header>
+            <ul class="nav flex-column" style="font-size: 20px; font-weight: 600;">
+              <li class="nav-item">
+                <h3 style="font-weight: 700;">Fall 2020</h3>
+                <a href="assets/docs/pa1_s20.pdf" class="nav-link">Proposal</a>
+                <a href="assets/docs/pa2_s20.pdf" class="nav-link">Specification</a>
+                <a href="assets/docs/pa3_s20.pdf" class="nav-link">Design</a>
+                <a href="assets/docs/pa4_s20.pdf" class="nav-link">Project Prototype</a>
+                <h3 class="mt-4" style="font-weight: 700;">Spring 2021</h3>
+                <a href="assets/docs/pa1_s21.pdf" class="nav-link">Revised Concept & Project Management</a>
+                <a href="assets/docs/pa2_s21.pdf" class="nav-link">Revised Specification & Design</a>
+                <a href="assets/docs/pa3_s21.pdf" class="nav-link">Acceptance Criteria and Testing Strategy & Plan</a>
+                <a href="assets/docs/poster.pdf" class="nav-link">Project Poster</a>
+                <a href="https://www.youtube.com/watch?v=HrVUruFsb08" class="nav-link">Project Video</a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="assets/vendor/purecounter/purecounter.js"></script> -->
+    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
